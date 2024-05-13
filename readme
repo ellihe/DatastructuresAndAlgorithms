@@ -1,0 +1,59 @@
+Kurssi: Tietorakenteet ja algoritmit
+Opiskelija: Ellinoora Hetemaa
+
+Projektin 1. vaihe
+
+Tässä ohjelmointiprojektissa tiedon tallentamiseen käytettiin tietorakennetta
+unordered_map<TownID, Town>. Mapin avaimena on siis string-tyyppinen id
+kaupungille ja arvona kaupingin struct.
+
+Tietorakenteeksi valittiin unordered_map projektissa suoritettujen komentojen
+tehokkuuden kannalta. Usein projektin funktioissa suoritetaan tietorakenteeseen
+key-value- parin lisäämistä tai poistamista satunnaiseen kohtaan, mitkä ovat
+vakioaikaisia operaatioita unordered_mapille. Lisäksi tietorakenteesta etsitään
+usein alkioita key:n perusteella, mikä on myös unordered_mapille keskimääräisesti
+vakioaikainen operaatio.
+
+Projektin funktiot toteutettiin pääosin STL:n valmiita algoritmeja käyttäen, sillä
+ne ovat usein tehokkuuksiltaan parempia, kuin itse toteutetut. STL:n algoritmien käytön
+hyvä puoli oli myös se, että niiden avulla funktioiden tehokkuuksien arviointi oli
+suhteellisen helppoa.
+
+Tietorakenteen avainten arvoiksi valitsin structin, sillä sen sisältöä on suhteellisen
+helppoa ja tehokasta hyödyntää. Structissa alkoina on vektori vasallien tallentamiseen, sekä TownID
+tyyppinen muuttuja isäntäkaupingin tallentamiseen. Vasallivektorin valitsin siitä syystä, että
+vektoriin voi helposti lisätä loppuun ja poistaa lopusta alkioita vakioaikaisesti. Muita
+toiminnallisuuksia vasalli-tietorakenteen osalta ei juuri projektin aikana ilmennyt.
+
+
+
+Projektin 2. vaihe
+
+Tässä ohjelmointiprojektissa tiedon tallentamiseen käytettiin tietorakennetta
+unordered_map<TownID, Town>. Mapin avaimena on siis string-tyyppinen id
+kaupungille ja arvona kaupingin struct.
+
+Tietorakenteeksi valittiin 1. vaiheessa unordered_map projektissa suoritettujen komentojen
+tehokkuuden kannalta. Usein projektin funktioissa suoritetaan tietorakenteeseen
+key-value- parin lisäämistä tai poistamista satunnaiseen kohtaan, mitkä ovat
+vakioaikaisia operaatioita unordered_mapille. Lisäksi tietorakenteesta etsitään
+usein alkioita key:n perusteella, mikä on myös unordered_mapille keskimääräisesti
+vakioaikainen operaatio.
+
+Projektin funktiot toteutettiin pääosin STL:n valmiita algoritmeja käyttäen, sillä
+ne ovat usein tehokkuuksiltaan parempia, kuin itse toteutetut. STL:n algoritmien käytön
+hyvä puoli oli myös se, että niiden avulla funktioiden tehokkuuksien arviointi oli
+suhteellisen helppoa.
+
+Tieverkoston tallentamiseen käytin projektin 1 vaiheessa luotua kaupunki structia,
+sillä se oli kätevä ja helppo tapa tallentaa kaupunkin väliset naapurisuhteet. Tiet
+on tallennettu structiin siten, että jokaisella kaupingilla on oma unordered_map, jossa
+on tallennettuna kaikki kaupungit, joihin menee tie kyseisestä kaupungista. Sen lisäksi
+mapissa on myös teiden pituudet. Structiin lisättiin 1. vaiheen jälkeen myös muuta tietoa
+tieverkostosta, joita tarvitaan muun muassa graafihakualgoritmien suorituksissa.
+
+Funktioiden toteuttamiseen käytin kurssilla esiteltyjä graafialgoritmeja, sillä oman logiikan
+tuottaminen koodimuotoon ei varmasti olisi ollu yhtään tehokkaampaa. Viimeisen "bonusfuntion"
+toteuttamiseen käytin Kruskal nimistä algoritmia, sillä se tuntui sopivan hyvin tilanteeseen.
+
+
