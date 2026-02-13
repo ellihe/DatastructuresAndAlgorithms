@@ -1,6 +1,6 @@
 // Datastructures.hh
 //
-// Creator name: Ellinoora Hetemaa
+// Creator name: EH
 
 #ifndef DATASTRUCTURES_HH
 #define DATASTRUCTURES_HH
