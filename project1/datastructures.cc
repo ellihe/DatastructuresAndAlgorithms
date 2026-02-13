@@ -1,6 +1,6 @@
 // Datastructures.cc
 //
-// Creator name: Ellinoora Hetemaa
+// Creator name: EH
 
 #include "datastructures.hh"
 
