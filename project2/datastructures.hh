@@ -1,6 +1,6 @@
 // Datastructures.hh
 //
-// Student name: Ellinoora Hetemaa
+// Student name: EH
 
 #ifndef DATASTRUCTURES_HH
 #define DATASTRUCTURES_HH
