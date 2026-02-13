@@ -1,6 +1,6 @@
 ﻿// Datastructures.cc
 //
-// Student name: Ellinoora Hetemaa
+// Student name: EH
 
 #include "datastructures.hh"
 
